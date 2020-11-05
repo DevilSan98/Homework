@@ -1,17 +1,17 @@
-var шаги = 5000; //шаги в день
-var время;  //количество месяцов
-var скорость; //скорость ходьбы
-var вес; //сколько калорий потратил
-var рост;
-var калории1 = 0.035;
-var калории2 = 0.029;
-var расход ;
+var steps = 5000; //steps
+var time;  //time spend
+var speed; //speed
+var weight; //Kalloris
+var hight; // Hight
+var callories1 = 0.035; //contstant callories 1
+var callories2 = 0.029; //contstant callories 2
+var all ;
 
-do{                                                   //цикл
-    var месяц = prompt("Сколько времени.",""); //просим пользователя ввести сумму
-    var скорость = prompt("Какая скорость ходьбы.","");
-    var рост = prompt("Ваш рост.","");
-    var вес = prompt("Вас вес","");
-	расход     = калории1 * вес + (скорость * скорость)/рост * калории2 * вес; //переводим по курсу
-	alert("Ты потратил " + расход );                           //выводим сумму в долларах
+do{  
+    var time = prompt("Сколько времени.",""); //
+    var speed = prompt("Какая скорость ходьбы.","");
+    var hight = prompt("Ваш рост.","");
+    var weight = prompt("Вас вес","");
+	all     = callories1 * weight + (speed * speed)/hight * callories2 * weight; //Math Form
+	alert("Ты потратил " + all );                           //Take out on the screen
 }while(uahValue !== null)                          
